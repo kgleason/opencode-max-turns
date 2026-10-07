@@ -1,0 +1,17 @@
+{
+  "name": "opencode-max-turns",
+  "version": "1.0.0",
+  "description": "OpenCode plugin that enforces a hard --max-turns limit on sessions, stopping runaway agent loops in CI and automation pipelines.",
+  "type": "module",
+  "main": "index.ts",
+  "files": ["index.ts"],
+  "keywords": ["opencode", "opencode-plugin", "max-turns", "automation", "ci"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgleason/opencode-max-turns.git"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": "*"
+  }
+}
