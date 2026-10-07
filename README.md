@@ -16,17 +16,25 @@ This plugin gives you that cap back.
 
 ## Install
 
+Clone the repo and reference it as a local path:
+
 ```bash
-opencode plugin add kgleason/opencode-max-turns
+git clone https://github.com/kgleason/opencode-max-turns.git \
+  ~/.local/share/opencode/plugins/opencode-max-turns/
 ```
 
-Or in `opencode.jsonc`:
+Then add it to your `opencode.jsonc`:
 
 ```jsonc
 {
-  "plugins": ["kgleason/opencode-max-turns"]
+  "plugins": ["/home/YOU/.local/share/opencode/plugins/opencode-max-turns/"]
 }
 ```
+
+> **Use an absolute path** if the opencode process runs with a different
+> `$HOME` than your own (e.g. inside a Hermes profile, CI container, or
+> systemd unit with `DynamicUser=yes`). `~` resolves relative to the
+> runtime `$HOME`, which may not be where you cloned the plugin.
 
 ## Usage
 
